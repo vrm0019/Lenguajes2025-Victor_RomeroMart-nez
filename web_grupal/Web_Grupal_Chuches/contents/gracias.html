@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Francisco Julian Reyes">
+    <title>DAW Gominolas - El Reino del Dulce Código</title>
+    <link rel="stylesheet" href="../styles/stylesForm.css">
+    <link rel="icon" href="../imgs/favicon.ico">
+    </head>
+<body>
+    <audio autoplay loop> <!-- Descargado con yt-dlp, procesado con Audacity -->
+        <source src="../audio/ambiente.mp3" type="audio/mpeg">
+    </audio>
+    <div class="main-logo">
+    <a href="../index.html"><img src="../imgs/LogoWeb.png" alt="LogoWeb" class="Logo1"></a>
+    </div>
+    <header class="header">
+            <nav class="contenedor-enlaces">
+                <a href="../index.html" class="enlace">INICIO</a>
+                <a href="../contents/catalogo.html" class="enlace">CATÁLOGO</a>
+                <a href="../contents/recetas.html" class="enlace">RECETAS</a>
+                <a href="../contents/formulario.html" class="enlace">PEDIDO</a>
+                <a href="../contents/informacion.html" class="enlace">INFORMACIÓN</a>
+            </nav>
+    </header>
+    <main class="main-container">
+
+       <div class="banner-formulario"><p class="encabezado-text">¡MUCHAS GRACIAS!</p></div>
+        <div class="section-content-2">
+            <table>
+                <tr>
+                    <td>
+                        <img src="../imgs/gracias.png">
+                    </td>
+                    <td class="container-gracias nombre-producto">
+                        <p><i>¡Formulario enviado!</i></p>
+                        <br>
+                        <p>Se ha enviado a su correo electrónico los detalles para continuar con el pago</p>
+                        <br>
+                        <a class="boton-inicio" href="../index.html">Volver al Inicio</a>
+                    </td>
+                </tr>
+            </table>
+        </div>
+
+    </main>
+        <br><br><br><br><br><br><br><br><br><br><br>
+        <footer class="footer">
+      <p class="footer-text">  © 2025 DAW Gominolas.<span class="separador-horizontal-footer"></span>Por: Guillermo Jorge, Victor Romero y Francisco Julian Reyes.</p>
+    </footer>
+    <!-- Pequeño Script para simular distintas paginas en un mismo HTML, basado sobre las ids de las distintas tablas y su tipo de display -->
+    <script>
+        function show(pagina){
+            Pagina1.style.display='none';
+            Pagina2.style.display='none';
+            Pagina3.style.display='none';
+            document.getElementById(pagina).style.display='table';
+        }
+    </script>
+</body>
+</html>

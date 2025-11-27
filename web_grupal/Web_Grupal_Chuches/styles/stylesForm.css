@@ -1,0 +1,497 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&family=Mochiy+Pop+P+One&display=swap"); /* FUENTES */
+
+/*1.ESTRUCTURA BÁSICA DE LA PÁGINA WEB*/
+
+body {
+background: url(../imgs/FondoDulce.png);
+background-size: cover;
+color: #eafdff;
+text-decoration: none;
+font-family: "Mochiy Pop P One", sans-serif;
+margin: 0;
+padding: 0;
+text-align: center;
+cursor: url(../imgs/cur116.cur), default;
+}
+
+.header {
+margin: 25px auto 40px auto; /* Centrado fluido en lugar de márgenes fijos */
+max-width: 920px; /* Limita el ancho en escritorio */
+width: 90%; /* Se adapta a la ventana */
+height: 50px;
+background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7)), url(../imgs/FondoBanner.png);
+background-size: cover;
+display: flex;
+align-items: center;
+border-radius: 100px;
+position: sticky;
+top: 0px;
+padding: 0 15px; /* Pequeño padding interno para que no toque los bordes */
+box-sizing: border-box; /* Incluir padding en el ancho */
+z-index: 5;
+cursor: url(../imgs/cur116.cur), default;
+}
+
+.Logo1 {
+width: 150px;
+height: auto;
+cursor:url(../imgs/cur223.cur), pointer;
+}
+
+.main-logo {
+position: fixed; 
+top: 20px;
+left: 20px; /* Margen izquierdo más pequeño */
+z-index: 4; /* Aseguramos que esté por encima del header */
+}
+
+
+.contenedor-enlaces {
+display: flex;
+gap: 25px; /* Espacio entre ítems de navegación */
+margin-left: 140px;
+}
+.enlace { /* Para eliminar el color morado y subrayado típico */
+text-decoration: none;
+color: white;
+text-shadow: 2px 2px 5px rgba(1, 1, 1, 1);
+font-weight: bolder;
+cursor:url(../imgs/cur223.cur), pointer;
+}
+
+.enlace:hover {
+transform: scale(1.1); /* Hace que el elemento sea más grande al pasarle el ratón*/
+}
+
+/* Contenedor principal de ancho fijo */
+.main-container {
+width: 920px;
+margin: 0 auto;
+padding: 32px;
+background-color: #ffffff;
+border-radius: 20px;
+border: 3px dashed #e6c3e3; /* Borde con puntitos */
+}
+
+.footer {
+background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0)), url(../imgs/FondoBanner.png);
+background-size: cover;
+color: #ffffff;
+padding: 1px 0;
+margin-top: 30px;
+position: static;
+width: 100%;
+border-top-left-radius:18px ;
+border-top-right-radius:18px ;
+}
+
+.footer-text {
+font-family: "Mochiy Pop P One", sans-serif;
+font-size: 12px; /* Tamaño un poco más grande */
+color: #ffffff;
+text-shadow: 2px 2px 5px rgba(1, 1, 1, 1); /* Sombra para mayor legibilidad */
+position: relative;
+font-weight:bolder;
+z-index: 2; /* Asegurar que el texto esté sobre el fondo */
+}
+
+.separador-horizontal-footer {
+    /* Convierte el span en un bloque que permite separar ambos textos del footer */
+    display: inline-block; 
+    margin-right: 1000px; 
+}
+
+/* 2. LO DE DENTRO DEL MAIN*/
+/* 2.1 SECCIÓN ENTRE EL NAV Y EL CONTENIDO*/
+
+.banner-intermedio {
+background-image: url(../imgs/Golosinas_Impacto.png);
+background-size: cover; /* Asegurar que la imagen cubra el área */
+background-position: center;
+background-repeat: no-repeat;
+padding: 20px;
+border-radius: 15px;
+border: 1px solid black;
+position: relative; /* Para poder posicionar el texto sobre la imagen */
+}
+
+.banner-text {
+font-family: "Mochiy Pop P One", sans-serif;
+font-size: 25px; /* Tamaño un poco más grande */
+color: #ffffff;
+text-shadow: 2px 2px 5px rgba(1, 1, 1, 1); /* Sombra para mayor legibilidad */
+position: relative;
+font-weight:bolder;
+z-index: 2; /* Asegurar que el texto esté sobre el fondo */
+}
+
+
+/* 2.2 Títulos de sección */
+.banner-encabezado {
+background-image: url(../imgs/BannerTop.png);
+background-size: cover;
+margin: 16px 0 25px 0;
+border-radius: 10px;
+border: 2px dashed #ffc0cb;
+height: 75px;
+}
+
+.banner-encabezado2 {
+background-image: url(../imgs/BannerNews.png);
+background-size: cover;
+margin: 16px 0 25px 0;
+border-radius: 10px;
+border: 2px dashed #ffc0cb;
+height: 75px;
+}
+.banner-encabezado3 {
+background-image: url(../imgs/BannerRetro.png);
+background-size: cover;
+margin: 16px 0 25px 0;
+border-radius: 10px;
+border: 2px dashed #ffc0cb;
+height: 75px;
+}
+
+.banner-encabezado4 {
+background-image: url(../imgs/Golosinas_Impacto.png);
+background-size: cover;
+margin: 16px 0 25px 0;
+border-radius: 10px;
+border: 2px dashed #ffc0cb;
+height: 75px;
+}
+
+.banner-encabezado5 {
+background-image: url(../imgs/FondoDulce.png);
+background-size: cover;
+margin: 16px 0 25px 0;
+border-radius: 10px;
+border: 2px dashed #ffc0cb;
+height: 75px;
+}
+
+.encabezado-text {
+font-family: "Mochiy Pop P One", sans-serif;
+font-size: 25px; /* Tamaño un poco más grande */
+color: #ffffff;
+text-shadow: 2px 2px 5px rgba(1, 1, 1, 1); /* Sombra para mayor legibilidad */
+position: relative;
+font-weight:bolder;
+z-index: 2; /* Asegurar que el texto esté sobre el fondo */
+}
+
+.section-content {
+margin-bottom: 45px;
+}
+
+/* 2.3 SECCIONES (Tablas y Divs) */
+
+.tabla-productos {
+width: 100%;
+table-layout: fixed;
+}
+
+.contenedor-producto {
+background-color: rgb(216, 247, 250);
+border: 1px solid #e0e0e0;
+padding: 20px;
+border-radius: 15px;
+box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Sombreado suave */
+text-align: center;
+}
+
+.contenedor-producto2 {
+background-color: mintcream;
+border: 1px solid #e0e0e0;
+padding: 20px;
+border-radius: 15px;
+box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.contenedor-producto3 {
+background-color: rgba(251, 252, 198, 0.826);
+border: 1px solid #e0e0e0;
+padding: 20px;
+border-radius: 15px;
+box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.imagen img {
+max-width: 200px;
+max-height: 200px;
+object-fit: contain;
+border-radius: 30px;
+box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+cursor:url(../imgs/cur223.cur), pointer;
+}
+
+.imagen:hover {
+transform: scale(1.1); /* Hace que el elemento sea un más grande al pasar el ratón*/
+}
+
+.nombre-producto {
+margin-top:10px;
+font-family: "Mochiy Pop P One", sans-serif;
+font-weight: 700;
+font-size: 16px;
+color: black;
+text-align: center;
+}
+
+.precio-producto {
+ font-family:"Mochiy Pop P One", sans-serif;
+font-size: 20px;
+color: rgb(0, 199, 76);
+font-weight: 700;
+margin-top:5px
+}
+
+/* EXCLUSIVO EN SECCIÓN DE FORMULARIO */
+.imagen-form img {
+max-width: 100px;
+max-height: 100px;
+object-fit: contain;
+float: left;
+border-radius: 10px;
+cursor: url(../imgs/cur116.cur), default;
+}
+
+.imagen-form-producto img {
+max-width: 100px;
+max-height: 100px;
+object-fit: contain;
+float: left;
+border-radius: 10px;
+cursor: url(../imgs/cur116.cur), default;
+}
+
+.imagen-boton img {
+padding: 20px;
+padding-bottom:0px;
+max-width: 100px;
+max-height: 100px;
+object-fit: contain;
+cursor: url(../imgs/cur223.cur), default;
+}
+
+.imagen-boton:hover {
+transform: scale(1.1); /* Hace que el elemento sea un más grande al pasar el ratón*/
+}
+
+button {    /* Button realmente no requiere del mismo estilo de hover al contrario que otros elementos de nuestra web*/
+padding: 20px;
+padding-bottom:0px;
+max-width: 150px;
+max-height: 150px;
+object-fit: contain;
+border:none;
+background: none;
+outline: none;
+cursor: url(../imgs/cur223.cur), default;
+}
+
+.contenedor-producto4 {
+background-color: rgba(253, 230, 244, 0.826);
+border: 1px solid #e0e0e0;
+padding: 20px;
+border-radius: 15px;
+box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+.contenedor-ventas {
+border: 1px solid #e0e0e0;
+padding: 20px;
+border-radius: 15px;
+box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+}
+
+input {
+max-width: 600px;
+max-height: 200px;
+border-radius: 50px;
+cursor:url(../imgs/cur223.cur), pointer;
+}
+
+textarea{
+    width: 600px;
+    height: 200px;
+    border-radius: 20px;
+    border-width: 2px;
+    cursor:url(../imgs/cur223.cur), pointer;
+    resize: none;
+}
+
+select{
+    width: 200px;
+    height: 30px;
+    text-align: center;
+    border-radius: 20px;
+    border-width: 2px;
+    cursor:url(../imgs/cur223.cur), pointer;
+    resize: none;
+}
+
+.acido {
+accent-color: #d6ff1d;
+width: 200px;
+height: 20px;
+border-radius: 50px;
+cursor:url(../imgs/cur223.cur), pointer;
+}
+
+.dulce {
+accent-color: #ff52ff;
+width: 200px;
+height: 20px;
+border-radius: 50px;
+cursor:url(../imgs/cur223.cur), pointer;
+}
+
+.salado {
+accent-color: #258bff;
+width: 200px;
+height: 20px;
+border-radius: 50px;
+cursor:url(../imgs/cur223.cur), pointer;
+}
+
+.number{
+    text-align: center;
+    width: 80px;
+    text-shadow: none;
+    font-family: "Mochiy Pop P One", sans-serif;
+    font-size: 25px; /* Tamaño un poco más grande */
+    color: #2b2b2b;
+    position: relative;
+    font-weight:bolder;
+    z-index: 2; /* Asegurar que el texto esté sobre el fondo */
+}
+
+
+input::-webkit-inner-spin-button {
+  -webkit-appearance:none;
+    cursor:url(../imgs/cur223.cur), pointer;
+} 
+
+
+label{
+    cursor:url(../imgs/cur116.cur), pointer;
+}
+
+caption{
+    font-family: "Mochiy Pop P One", sans-serif;
+    font-size: 25px; /* Tamaño un poco más grande */
+    color: #ec52e0;
+    position: relative;
+    font-weight:bolder;
+    padding-bottom: 20px;
+    z-index: 2; /* Asegurar que el texto esté sobre el fondo */
+}
+
+.form-text {
+    font-family: "Mochiy Pop P One", sans-serif;
+    font-size: 1rem; /* Tamaño un poco más grande */
+    width: 600px;
+    color: #2b2b2b;
+    position: relative;
+    font-weight:bolder;
+    z-index: 2; /* Asegurar que el texto esté sobre el fondo */
+}
+
+.boton-inicio {
+    display: inline-block;
+    background-color: #69d5ff;
+    color: white;
+    text-decoration: none;
+    /* Elimina el subrayado de enlace */
+    padding: 10px 20px;
+    border-radius: 50px;
+    font-family: 'Comfortaa', sans-serif;
+    font-weight: bold;
+    margin-top: 15px;
+    transition: 0.3s ease;
+    width: 40%;
+    max-width: 250px;
+    cursor: url(../imgs/cur223.cur), pointer;
+}
+
+.boton-inicio:hover {
+    background-color: #a4e9f7;
+}
+
+.banner-formulario {
+    background-image: url(../imgs/BannerFormulario.png);
+    background-size: cover;
+    margin: 16px 0 25px 0;
+    border-radius: 10px;
+    border: 2px dashed #ffdebe;
+    height: 75px;
+}
+
+.enlace-boton { /* Para eliminar el color morado y subrayado típico */
+    text-decoration: none;
+    color: white;
+    text-shadow: 2px 2px 5px rgba(1, 1, 1, 1);
+    font-weight: bolder;
+    cursor:url(../imgs/cur223.cur), pointer;
+    }
+
+.enlace-boton:hover {
+    transform: scale(1.1); /* Hace que el elemento sea más grande al pasarle el ratón*/
+}
+
+.container-gracias {
+width: 920px;
+margin: 0 auto;
+padding: 32px;
+background-color: #ffffff;
+border-radius: 20px;
+border: 3px #e6c3e3;
+}
+
+::-webkit-scrollbar{
+    width: 30px;
+}
+
+::-webkit-scrollbar-track{
+    background: #eafdff;
+}
+
+::-webkit-scrollbar-thumb{
+    background: #ffd8ea;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    cursor:url(../imgs/cur223.cur), pointer;
+}
+
+
+/* SOLO UTILIZADO EN LA SECCIÓN DE INFORMACIÖN*/
+
+.informacion-contenedor {
+    background-color: #f7f7f7;
+    padding: 10px 20px;
+    border-radius: 12px;
+    border: 2px solid #e6c3e3;
+    text-align:justify; 
+    color: #333;
+    font-family: 'Comfortaa', sans-serif;
+    line-height: 1.7; /* Para que las lineas de texto no se queden muy pegadas */
+}
+
+
+h2 { /* El encabezado de otro color, tamaño y subrayado*/
+    font-family: 'Mochiy Pop P One', sans-serif;
+    color: #e6c3e3;
+    margin-top: 25px;
+    border-bottom: 2px dashed #e6c3e3;
+    text-align: center;
+}
+
+.mantener-negrita{
+    text-decoration: none;
+    color: black;
+    font-weight: bolder;
+    cursor: url(../imgs/cur223.cur), pointer;
+}

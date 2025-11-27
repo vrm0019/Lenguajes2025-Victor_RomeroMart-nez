@@ -1,0 +1,319 @@
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&family=Mochiy+Pop+P+One&display=swap");
+/* FUENTES */
+
+/* 1. ESTRUCTURA BÁSICA DE LA PÁGINA WEB */
+
+body {
+    background: url(../imgs/FondoDulce.png);
+    background-size: cover;
+    color: #ffffff;
+    text-decoration: none;
+    font-family: "Mochiy Pop P One", sans-serif;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    cursor: url(../imgs/cur116.cur), default;
+}
+
+p {
+    color: black;
+}
+
+.header {
+    margin: 25px auto 40px auto;
+    max-width: 920px;
+    width: 90%;
+    height: 50px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7)), url(../imgs/FondoBanner.png);
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    border-radius: 100px;
+    position: sticky;
+    top: 4px;
+    padding: 0 15px;
+    box-sizing: border-box;
+    z-index: 5;
+}
+
+.Logo1 {
+    width: 150px;
+    height: auto;
+    cursor: url(../imgs/cur223.cur), pointer;
+}
+
+.main-logo {
+    position: absolute;
+    top: 20px;
+    left: 30px;
+}
+
+.contenedor-enlaces {
+    display: flex;
+    gap: 25px;
+    margin-left: 140px;
+}
+
+.enlace {
+    text-decoration: none;
+    color: white;
+    text-shadow: 2px 2px 5px rgba(1, 1, 1, 1);
+    font-weight: bolder;
+    cursor: url(../imgs/cur223.cur), pointer;
+}
+
+.enlace:hover {
+    transform: scale(1.1);
+}
+
+/* Contenedor principal de ancho fijo */
+.main-container {
+    width: 920px;
+    margin: 0 auto;
+    padding: 32px;
+    background-color: #ffffff;
+    border-radius: 20px;
+    border: 3px dashed #e6c3e3;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilo para cada sección de producto */
+.second-container {
+    width: 800px;
+    margin: 0 auto;
+    padding: 0;
+    /* Quitamos el padding aquí y lo ponemos en el contenido */
+    background-color: #e1f4b5;
+    /* Fondo beige claro */
+    border-radius: 20px;
+    border: 3px dashed #e6c3e3;
+    overflow: hidden;
+    /* Asegura que el border-radius se aplique bien */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 30px;
+}
+
+iframe {
+    /* CLAVE: Vuelve al 100% de ancho del contenedor padre. */
+    width: 100%;
+    height: 400px;
+    /* CLAVE: Se elimina el centrado y se pone margin 0 para ocupar todo el espacio. */
+    margin: 0;
+    padding: 0;
+    background-color: #e1f4b5;
+    border-radius: 20px;
+    border: 3px dashed #e6c3e3;
+    overflow: hidden;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Estilo para el encabezado de la sección (el banner verde oscuro) */
+.header-producto {
+    color: white;
+    padding: 10px 20px;
+    text-align: center;
+    font-family: "Mochiy Pop P One", sans-serif;
+}
+
+.header-producto h2 {
+    margin: 0;
+    font-size: 1.5em;
+    text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.5);
+}
+
+/* Contenedor del subtítulo y el detalle del producto (dentro del second-container) */
+.detalle-producto {
+    padding: 20px;
+}
+
+
+
+/* Contenedor Flex para la imagen y la descripción */
+.contenido-producto {
+    display: flex;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+/* Estilo para el contenedor de la imagen */
+.imagen-producto {
+    flex: 0 0 35%;
+    /* La imagen ocupa el 35% del espacio */
+    max-width: 35%;
+    border-radius: 5px;
+    overflow: hidden;
+}
+
+.imagen-producto img {
+    display: block;
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+/* Estilo para la descripción */
+.descripcion-producto {
+    flex: 1;
+    /* El texto ocupa el espacio restante */
+    text-align: left;
+    font-family: 'Comfortaa', sans-serif;
+    font-size: 0.95em;
+    color: #333333;
+    padding-right: 10px;
+    /* Separación del borde derecho */
+}
+
+/* Asegurar que el párrafo dentro de la descripción tenga el color correcto */
+.descripcion-producto p {
+    color: #333333;
+    /* Color de texto para el párrafo */
+    margin: 0;
+    line-height: 1.5;
+}
+
+
+.footer {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0)), url(../imgs/FondoBanner.png);
+    background-size: cover;
+    color: #ffffff;
+    padding: 1px 0;
+    margin-top: 30px;
+    position: static;
+    width: 100%;
+}
+
+.footer-text {
+    font-family: "Mochiy Pop P One", sans-serif;
+    font-size: 12px;
+    color: #ffffff;
+    text-shadow: 2px 2px 5px rgba(1, 1, 1, 1);
+    /* Sombra para mayor legibilidad */
+    position: relative;
+    font-weight: bolder;
+    z-index: 2;
+}
+
+.separador-horizontal-footer {
+
+    display: inline-block;
+    margin-right: 850px;
+}
+
+/* 2. TABLAS Y PRODUCTO */
+
+.tabla-productos {
+    width: 100%;
+    table-layout: fixed;
+    border-collapse: collapse;
+    height: 100%;
+}
+
+.tabla-productos tr {
+    height: 100%;
+}
+
+.tabla-productos td {
+    padding: 20px;
+    vertical-align: top;
+}
+
+/* Contenedor de producto (columna izquierda) */
+.contenedor-producto {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    height: 100%;
+    justify-content: flex-start;
+    /* Pega el contenido a la parte superior */
+}
+
+.imagen {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.imagen img {
+    max-width: 400px;
+    max-height: 400px;
+    object-fit: contain;
+    border-radius: 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.6);
+}
+
+.nombre-producto {
+    margin-top: 10px;
+    font-family: "Mochiy Pop P One", sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    color: #ff69b4;
+}
+
+.precio-producto {
+    font-family: "Mochiy Pop P One", sans-serif;
+    font-size: 28px;
+    color: #e6c3e3;
+    font-weight: 700;
+    margin-top: 5px;
+}
+
+/* 3. DESCRIPCIÓN (COLUMNA DERECHA)*/
+
+.descripcion h2 {
+    font-family: "Mochiy Pop P One", sans-serif;
+    color: #ff69b4;
+    font-size: 1.8em;
+    margin-top: 0;
+    margin-bottom: 15px;
+}
+
+.descripcion {
+    text-align: left;
+    font-family: 'Comfortaa', sans-serif;
+    color: #333333;
+    font-size: 1.1em;
+    line-height: 1.6;
+    padding-left: 30px;
+    border-left: 2px dashed #ff99ff;
+}
+
+/* 4. BOTÓN DE COMPRA*/
+.boton-comprar {
+    display: inline-block;
+    background-color: #ff69b4;
+    color: white;
+    text-decoration: none;
+    /* Elimina el subrayado de enlace */
+    padding: 10px 20px;
+    border-radius: 50px;
+    font-family: 'Comfortaa', sans-serif;
+    font-weight: bold;
+    margin-top: 15px;
+    transition: 0.3s ease;
+    width: 40%;
+    max-width: 250px;
+    cursor: url(../imgs/cur223.cur), pointer;
+}
+
+.boton-comprar:hover {
+    background-color: #e6c3e3;
+    /* Para que se ponga clarito al pasarle el ratón*/
+}
+
+::-webkit-scrollbar{
+    width: 30px;
+}
+
+::-webkit-scrollbar-track{
+    background: #eafdff;
+}
+
+::-webkit-scrollbar-thumb{
+    background: #ffd8ea;
+}
+
+::-webkit-scrollbar-thumb:hover{
+    cursor:url(../imgs/cur223.cur), pointer;
+}

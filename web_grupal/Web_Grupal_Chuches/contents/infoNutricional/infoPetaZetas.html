@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Víctor Romero Martínez">
+    <link rel="icon" href="../../imgs/favicon.ico">
+    <title>DAW Gominolas - Información Nutricional PetaZetas LxC</title>
+    <!-- Usamos el mismo estilo de fuente para coherencia -->
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@400;700&family=Mochiy+Pop+P+One&display=swap");
+        
+        body {
+            /* Fondo inspirado en los colores cálidos de lentejas y chorizo */
+            background-color: #fcf8f0; 
+            background-image: linear-gradient(135deg, #d3b482 25%, #fcf8f0 25%, #fcf8f0 50%, #d3b482 50%, #d3b482 75%, #fcf8f0 75%, #fcf8f0);
+            background-size: 40px 40px;
+            color: #333333;
+            font-family: 'Comfortaa', sans-serif;
+            margin: 0;
+            padding: 20px;
+            text-align: center;
+            cursor: url(../../imgs/cur116.cur), pointer;
+        }
+
+        .etiqueta-trasera {
+            width: 90%;
+            max-width: 600px;
+            margin: 0 auto;
+            background-color: #ffffff;
+            border-radius: 15px;
+            padding: 25px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+            border: 3px solid #b71c1c; /* Borde rojo fuerte (como el chorizo) */
+            text-align: left;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .etiqueta-trasera h1 {
+            font-family: 'Mochiy Pop P One', sans-serif;
+            font-size: 1.5em;
+            color: #b71c1c; /* Rojo para el título */
+            text-align: center;
+            margin-bottom: 20px;
+            border-bottom: 2px solid #d3b482;
+            padding-bottom: 10px;
+        }
+
+        /* Sección de Nutrición */
+        .seccion-nutricional {
+            border: 2px solid #333333;
+            padding: 10px;
+            margin-bottom: 20px;
+        }
+
+        .seccion-nutricional h2 {
+            font-family: 'Mochiy Pop P One', sans-serif;
+            font-size: 1.1em;
+            color: #333333;
+            text-align: center;
+            margin: 0 0 10px 0;
+            border-bottom: 1px solid #333333;
+            padding-bottom: 5px;
+        }
+
+        .datos-nutricionales table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.9em;
+        }
+
+        .datos-nutricionales th, .datos-nutricionales td {
+            padding: 4px 0;
+            border-bottom: 1px dashed #cccccc;
+        }
+        
+        .datos-nutricionales th {
+            text-align: left;
+            font-weight: normal;
+        }
+        
+        .datos-nutricionales td {
+            text-align: right;
+            font-weight: bold;
+        }
+
+        /* Sección de Ingredientes */
+        .seccion-ingredientes h2 {
+            font-family: 'Mochiy Pop P One', sans-serif;
+            font-size: 1.1em;
+            color: #333333;
+            margin-top: 20px;
+            margin-bottom: 10px;
+        }
+
+        .ingredientes-lista {
+            font-size: 0.9em;
+            line-height: 1.4;
+            color: #555555;
+            padding: 10px;
+            border: 1px dashed #d3b482;
+            border-radius: 5px;
+        }
+        
+        .alergias, .aviso {
+            font-size: 0.8em;
+            padding: 5px 0;
+            margin-top: 10px;
+            border-top: 1px solid #d3b482;
+        }
+
+        .alergias strong {
+            color: #8d4513; /* Marrón para la advertencia de legumbre */
+        }
+
+        /* Footer y Códigos */
+        .footer-etiqueta {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            margin-top: 25px;
+            padding-top: 15px;
+            border-top: 2px solid #333333;
+        }
+
+        .footer-etiqueta p {
+            margin: 0;
+            font-size: 0.8em;
+            color: #555555;
+        }
+
+        .codigo-barras {
+            text-align: right;
+        }
+        
+        .codigo-barras img {
+            width: 150px;
+            height: auto;
+            display: block;
+            margin-top: 5px;
+        }
+        
+        .codigo-barras small {
+            font-size: 0.7em;
+            display: block;
+            margin-top: -5px;
+        }
+        
+        /* Detalles de Producción */
+        .datos-produccion {
+            font-size: 0.8em;
+            margin-top: 15px;
+            padding-top: 10px;
+            border-top: 1px solid #cccccc;
+        }
+    </style>
+</head>
+<body>
+    <div class="etiqueta-trasera">
+        <h1>PetaZetas LxC: Sabor Lentejas con Chorizo</h1>
+        
+        <!-- SECCIÓN DE INFORMACIÓN NUTRICIONAL -->
+        <div class="seccion-nutricional">
+            <h2>INFORMACIÓN NUTRICIONAL (Por 100g)</h2>
+            <div class="datos-nutricionales">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Valor energético</th>
+                            <td>1650 kJ / 394 kcal</td>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <th>Grasas</th>
+                            <td>5.0 g</td>
+                        </tr>
+                        <tr>
+                            <th>de las cuales saturadas</th>
+                            <td>2.5 g</td>
+                        </tr>
+                        <tr>
+                            <th>Hidratos de Carbono</th>
+                            <td>80 g</td>
+                        </tr>
+                        <tr>
+                            <th>de los cuales azúcares</th>
+                            <td>68 g</td>
+                        </tr>
+                        <tr>
+                            <th>Proteínas</th>
+                            <td>4.0 g</td>
+                        </tr>
+                        <tr>
+                            <th>Sal</th>
+                            <td>0.5 g</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+        
+        <!-- SECCIÓN DE INGREDIENTES -->
+        <div class="seccion-ingredientes">
+            <h2>INGREDIENTES:</h2>
+            <p class="ingredientes-lista">Azúcar, Jarabe de Glucosa, Gasificante (Bicarbonato de Peta, E500), Dextrosa, Aroma de Lentejas (Legumbre Sintética, E230), Aroma de Chorizo Ahumado (Sabor Artificial, E160c), Acidulante (Ácido Cítrico), Colorantes (Caramelo Sabor, E150a; Rojo de Chorizo, E129). Contiene Trazas de Magia y Sabor Tradicional.</p>
+        </div>
+        
+        <div class="alergias">
+            <strong>ADVERTENCIA:</strong> Puede producir efectos explosivos al contacto con la saliva. No apto para vegetarianos estrictos (contiene el *espíritu* del chorizo).
+        </div>
+        
+        <div class="aviso">
+            Recomendado para consumir en días fríos o mientras se programa en C++. Consumo preferente antes del fin de: <strong>03/2027</strong>.
+        </div>
+
+        <div class="datos-produccion">
+            <p><strong>Peso Neto:</strong> 75 g</p>
+            <p><strong>Lote:</strong> L: LxC27-GASTRO</p>
+        </div>
+
+        <!-- FOOTER Y CÓDIGO DE BARRAS -->
+        <div class="footer-etiqueta">
+            <div>
+                <p><strong>FABRICADO POR:</strong></p>
+                <p>DAW Gominolas S.L.</p>
+                <p>Davante Medac, Módulo DAW</p>
+                <p>Córdoba, España.</p>
+            </div>
+            <div class="codigo-barras">
+                <img src="https://placehold.co/150x50/333333/FFFFFF?text=841150015356" alt="Código de Barras">
+                <small>841150015356</small>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

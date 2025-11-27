@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Francisco Julian Reyes">
+    <title>DAW Gominolas - El Reino del Dulce Código</title>
+    <link rel="stylesheet" href="../styles/stylesForm.css">
+    <link rel="icon" href="../imgs/favicon.ico">
+    </head>
+<body>
+    <audio autoplay loop> <!-- Descargado con yt-dlp, procesado con Audacity -->
+        <source src="../audio/ambiente.mp3" type="audio/mpeg">
+    </audio>
+    <div class="main-logo">
+    <a href="../index.html"><img src="../imgs/LogoWeb.png" alt="LogoWeb" class="Logo1"></a>
+    </div>
+    <header class="header">
+            <nav class="contenedor-enlaces">
+                <a href="../index.html" class="enlace">INICIO</a>
+                <a href="../contents/catalogo.html" class="enlace">CATÁLOGO</a>
+                <a href="../contents/recetas.html" class="enlace">RECETAS</a>
+                <a href="../contents/formulario.html" class="enlace">PEDIDO</a>
+                <a href="../contents/informacion.html" class="enlace">INFORMACIÓN</a>
+            </nav>
+    </header>
+    <main class="main-container">
+
+       <div class="banner-formulario"><p class="encabezado-text">¡RELLENA TU PEDIDO!</p></div>
+        <div class="section-content">
+            <form name="formulario" action="./gracias.html" method="get">
+                <!-- Sección 1--> <!-- Sí se puede enviar formulario sin añadir productos, actuando como formulario de datos-->
+                <table class="tabla-productos" id="Pagina1" >
+                    <caption>¡Añade productos a tu pedido!</caption>
+                    <tr>
+                        <td class="contenedor-ventas" style="background-color: rgb(255, 222, 222);">
+                            <div class="imagen-form-producto"><img src="../imgs/PetaZetaMedy.png" alt="PetaZeta Medy"></div>
+                            <div class="nombre-producto">
+                                <label>PetaZeta Medy</label></div><br>
+                                <input type="number" class="number" name="PetaZeta Medy" id="ventas1" min="0" max="99" value="0">
+                        </td>
+                        <td class="contenedor-ventas"  style="background-color: rgb(255, 238, 222);">
+                            <div class="imagen-form-producto"><img src="../imgs/GominolaPotus.png" alt="Gominola Potus"></div>
+                            <div class="nombre-producto">
+                                <label>Gominolas Potus</label></div><br>
+                                <input type="number" class="number" name="Gominola Potus" id="ventas2" min="0" max="99" value="0">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="contenedor-ventas" style="background-color: rgb(255, 254, 222);">
+                            <div class="imagen-form-producto"><img src="../imgs/TuxCrispies.png" alt="Tux Crispies"></div>
+                            <div class="nombre-producto">
+                                <label>Tux Crispies</label></div><br>
+                                <input type="number" class="number" name="Tux Crispies" id="ventas3" min="0" max="99" value="0">
+                        </td>
+                        <td class="contenedor-ventas"  style="background-color: rgb(242, 255, 222);">
+                            <div class="imagen-form-producto"><img src="../imgs/HTMLCandy.png" alt="HTML Candies"></div>
+                            <div class="nombre-producto">
+                                <label>HTML Candies</label></div><br>
+                                <input type="number" class="number" name="HTML Candies" id="ventas4" min="0" max="99" value="0">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="contenedor-ventas" style="background-color: rgb(222, 255, 239);">
+                            <div class="imagen-form-producto"><img src="../imgs/MedyGummies.png" alt="Medy Gummies"></div>
+                            <div class="nombre-producto">
+                                <label>Medy Gummies</label></div><br>
+                                <input type="number" class="number" name="Medy Gummies" id="ventas5" min="0" max="99" value="0">
+                        </td>
+                        <td class="contenedor-ventas"  style="background-color: rgb(222, 255, 251);">
+                            <div class="imagen-form-producto"><img src="../imgs/CSSChocoBars.png" alt="CSS Choco Bars"></div>
+                            <div class="nombre-producto">
+                                <label>CSS Choco Bars</label></div><br>
+                                <input type="number" class="number" name="CSS Choco Bars" id="ventas6" min="0" max="99" value="0">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="contenedor-ventas" style="background-color: rgb(222, 236, 255);">
+                            <div class="imagen-form-producto"><img src="../imgs/RetroXPGummies.png" alt="XP Gummies"></div>
+                            <div class="nombre-producto">
+                                <label>XP Gummies</label></div><br>
+                                <input type="number" class="number" name="XP Gummies" id="ventas7" min="0" max="99" value="0">
+                        </td>
+                        <td class="contenedor-ventas"  style="background-color: rgb(224, 222, 255);">
+                            <div class="imagen-form-producto"><img src="../imgs/EmuleDrink.png" alt="Emule Drink"></div>
+                            <div class="nombre-producto">
+                                <label>Emule Drink</label></div><br>
+                                <input type="number" class="number" name="Emule Drink" id="ventas8" min="0" max="99" value="0">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="contenedor-ventas" style="background-color: rgb(252, 222, 255);">
+                            <div class="imagen-form-producto"><img src="../imgs/FortranPopCorn.png" alt="Fortran PopCorn"></div>
+                            <div class="nombre-producto">
+                                <label>Fortran PopCorn</label></div><br>
+                                <input type="number" class="number" name="Fortran PopCorn" id="ventas9" min="0" max="99" value="0">
+                        </td>
+                        <td>
+                            <div class="imagen-boton"><a href="#" onclick="return show('Pagina2');"><img src="../imgs/FlechaDer.png" alt="Siguiente"></a></div>
+                        </td>
+                    </tr>
+                </table>
+                <!-- Sección 2-->
+                <table class="tabla-productos" id="Pagina2" style="display: none;">
+                    <caption>¡Queremos saber más sobre ti!</caption>
+                    <tr>
+                        <td class="contenedor-producto" colspan="2">
+                            <div class="imagen-form"><img src="../imgs/salado.png" alt="Salado"></a></div>
+                            <div class="nombre-producto">
+                                <label>¿Cómo de salado te gustan las chuches?</label></div>
+                                <input type="range" class="salado" name="salado" id="salado" min="0" max="10" value="0">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="contenedor-producto3" colspan="2">
+                            <div class="imagen-form"><img src="../imgs/acido.png" alt="Ácido"></a></div>
+                            <div class="nombre-producto">
+                                <label>¿Cómo de ácido te gustan las chuches?</label></div>
+                                <input type="range" class="acido" name="acido" id="acido" min="0" max="10" value="0">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="contenedor-producto4" colspan="2">
+                            <div class="imagen-form"><img src="../imgs/dulce.png" alt="Dulce"></a></div>
+                            <div class="nombre-producto">
+                                <label>¿Cómo de dulce te gustan las chuches?</label></div>
+                                <input type="range" class="dulce" name="dulce" id="dulce" min="0" max="10" value="0">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="contenedor-producto2" colspan="2">
+                            <div class="imagen-form"><img src="../imgs/snack.png" alt="Dulce"></a></div>
+                            <div class="nombre-producto">
+                                <label>¿Cuál es tu chuche favorita de nuestra web?</label></div>
+                                <select class="nombre-producto" name="favorito" id="favorito" required>
+                                    <option disabled selected value> -- Obligatorio -- </option>
+                                    <option value="PetaZeta Medy">PetaZeta Medy</option>
+                                    <option value="Gominolas Potus">Gominolas potus</option>
+                                    <option value="Tux Crispies">Gominolas potus</option>
+                                    <option value="HTML Candies">HTML Candies</option>
+                                    <option value="Medy Gummies">Medy Gummies</option>
+                                    <option value="CSS Choco Bars">CSS Choco Bars</option>
+                                    <option value="XP Gummies">XP Gummies</option>
+                                    <option value="Emule Drink">Emule Drink</option>
+                                    <option value="Fortran PopCorn">Fortran PopCorn</option>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="imagen-boton"><a href="#" onclick="return show('Pagina1');"><img src="../imgs/FlechaIzq.png" alt="Atrás"></a></div>
+                        </td>
+                        <td>
+                            <div class="imagen-boton"><a href="#" onclick="return show('Pagina3');"><img src="../imgs/FlechaDer.png" alt="Siguiente"></a></div>
+                        </td>
+                    </tr>
+                </table>
+                <!-- Sección 3-->
+                <table class="tabla-productos" id="Pagina3" style="display: none;">
+                    <tr>
+                    <caption>¡Necesitamos tus dulces datos!</caption>
+                        <td class="contenedor-producto" colspan="2">
+                            <div class="nombre-producto"><label>Nombre y Apellidos</label></div>
+                                <input type="text" class="form-text" name="nombre-apellido" id="nombre-apellido" required>
+                                <br>
+                            <div class="nombre-producto"><label>Email</label></div>
+                                <input type="email" class="form-text" name="email" id="email" required>
+                                <br>
+                            <div class="nombre-producto"><label>Comentarios</label></div>
+                                <textarea class="nombre-producto"></textarea>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="imagen-boton"><a href="#" onclick="return show('Pagina2');"><img src="../imgs/FlechaIzq.png" alt="Siguiente"></a></div>
+                        </td>
+                        <td>
+                            <div class="imagen-boton"><button><img src="../imgs/Enviar.png" alt="Enviar Formulario"></button></div>
+                        </td>
+                    </tr>
+                </table>
+            </form>
+        </div>
+
+    </main>
+        <footer class="footer">
+      <p class="footer-text">  © 2025 DAW Gominolas.<span class="separador-horizontal-footer"></span>Por: Guillermo Jorge, Victor Romero y Francisco Julian Reyes.</p>
+    </footer>
+    <!-- Pequeño Script para simular distintas paginas en un mismo HTML, basado sobre las ids de las distintas tablas y su tipo de display -->
+    <script>
+        function show(pagina){
+            Pagina1.style.display='none';
+            Pagina2.style.display='none';
+            Pagina3.style.display='none';
+            document.getElementById(pagina).style.display='table';
+        }
+    </script>
+</body>
+</html>
