@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Victor Romero Martinez">
+    <title>Overflow ejemplo</title>
+    <style>
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0 auto;
+      text-align: center;
+    }
+
+    .bloque-overflow {
+      /* Ancho y alto fijos para provocar desbordamiento de texto */
+      width: 200px;
+      height: 120px;
+      border: 2px solid #333;
+      margin-bottom: 10px;
+      background-color: #fff;
+      font-size: 14px;
+      padding: 8px;
+      margin: 0 auto;
+      background-color: beige;
+    }
+
+    .overflow-visible {
+      /* El contenido que se desborda se sigue viendo fuera de la caja */
+      overflow: visible;
+    }
+
+    .overflow-hidden {
+      /* El contenido que se desborda se recorta (no se ve lo que sobra) */
+      overflow: hidden;
+    }
+
+    .overflow-scroll {
+      /* Siempre aparece una barra de scroll, haya o no desbordamiento */
+      overflow: scroll;
+    }
+
+    .overflow-auto {
+      /* Aparecen barras de scroll solo si es necesario */
+      overflow: auto;
+    }
+
+    .titulo-caja {
+      font-weight: bold;
+      margin-bottom: 5px;
+    }
+    .icono{
+            width: 200px;
+            height: 200px;
+        }
+
+    hr{
+        border: 1.4px solid black;
+    }
+  </style>
+</head>
+<h1>Propiedad overflow</h1>
+
+  <p class="explicacion">
+    La propiedad overflow controla qué ocurre cuando el contenido de una caja
+    <strong>no cabe</strong> dentro de su ancho y alto. Algunos valores frecuentes son:
+    visible, hidden, scroll y auto.
+  </p>
+<hr>
+  <div>
+    <div>
+      <div class="titulo-caja">overflow: visible (por defecto)</div>
+      <div class="bloque-overflow overflow-visible">
+        Este texto es más largo que el alto del contenedor, por lo que parte del contenido se saldrá fuera de la caja. Con overflow: visible, el texto que se desborda sigue siendo visible.
+      </div>
+    </div>
+<hr>
+    <div>
+      <div class="titulo-caja">overflow: hidden</div>
+      <div class="bloque-overflow overflow-hidden">
+        Este texto también es muy largo, pero con overflow: hidden el contenido que se sale del área definida por el alto y el ancho será simplemente recortado y no se mostrará. Tal y como ocurre en este ejemplo que estoy escribiendo aquí ya no lo puedes leer completo.
+      </div>
+    </div>
+<hr>
+    <div>
+      <div class="titulo-caja">overflow: scroll</div>
+      <div class="bloque-overflow overflow-scroll">
+        Con overflow: scroll siempre se muestran barras de desplazamiento (scroll), tanto si hace falta como si no, permitiendo al usuario ver todo el contenido que no cabe a simple vista.
+      </div>
+    </div>
+<hr>
+    <div>
+      <div class="titulo-caja">overflow: auto</div>
+      <div class="bloque-overflow overflow-auto">
+        Con overflow: auto, solo aparecen las barras de desplazamiento si el contenido realmente se desborda. Si el contenido fuera más corto, no aparecerían barras. 
+      </div>
+    </div>
+  </div>
+</body>
+</html>

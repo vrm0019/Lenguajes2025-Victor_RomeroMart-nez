@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Ferran Cutillas Castillo">
+    <title>Formulario3</title>
+</head>
+<body style="width:1000px ; margin: auto">
+    <h1>Formulario de Pedido</h1>
+    <form name="formulario" action="proceso.php" method="post">
+        <label for="nombre">Nombre del cliente: </label><br>
+        <input type="text" name="nombre" id="nombre"><br><br>
+
+        <label for="correo">Correo electrónico: </label><br>
+        <input type="email" name="correo" id="correo"><br><br>
+
+        <label for="fecha">Fecha deseada de entrega:</label><br>
+        <input type="date" id="fecha" name="fecha"><br><br>
+
+        <label for="color">Color del producto:</label><br>
+        <input type="color" id="color" name="color" value="#000000"><br><br>
+
+        <label for="cantidad">Cantidad: (1 a 10)</label><br>
+        <input type="range" id="cantidad" name="cantidad" min="1" max="10" step="1" value="6"><br><br>
+
+        <label for="accesorios">Accesorios adicionales: </label><br>
+        <select name="accesorios" id="accesorios" multiple size="4">
+            <option value="accesorio1">Funda protectora</option>
+            <option value="accesorio2">Batería adicional</option>
+            <option value="accesorio3">Soporte de mesa</option>
+            <option value="accesorio4">Kit de limpieza</option>
+        </select><br><br>
+
+        <input type="checkbox" name="terminos" id="terminos">
+        <label for="terminos"> Acepto los términos del pedido</label><br><br>
+
+        <label for="comentarios">Comentarios o instrucciones especiales: </label><br>
+        <textarea name="comentarios" id="comentarios" placeholder="Indica detalles adicionales sobre tu pedido..."></textarea><br><br>
+
+        <input type="submit"  value="Enviar pedido"> 
+
+    </form>
+ </body>
+</html>

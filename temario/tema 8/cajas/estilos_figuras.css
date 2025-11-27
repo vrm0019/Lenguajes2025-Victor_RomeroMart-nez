@@ -1,0 +1,121 @@
+table {
+  margin: 40px auto;
+  border-collapse: collapse;
+}
+td {
+  width: 250px;
+  height: 250px;
+  text-align: center;
+  vertical-align: middle;
+}
+
+.square4 {
+  position: relative;
+  width: 80px;
+  height: 80px;
+  margin: auto;
+}
+.square4 div {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 40px;
+}
+.square4 .tl {
+  border-color: red transparent transparent transparent;
+  left: 0;
+  top: 0;
+}
+.square4 .tr {
+  border-color: transparent blue transparent transparent;
+  right: 0;
+  top: 0;
+  transform: rotate(90deg);
+}
+.square4 .bl {
+  border-color: transparent transparent green transparent;
+  left: 0;
+  bottom: 0;
+}
+.square4 .br {
+  border-color: transparent transparent transparent yellow;
+  right: 0;
+  bottom: 0;
+}
+
+.big-tris {
+  position: relative;
+  width: 200px;
+  height: 200px;
+  margin: auto;
+}
+.big-tris div {
+  position: absolute;
+  width: 0;
+  height: 0;
+  border-style: solid;
+}
+.big-tris .top {
+  left: 0;
+  right: 0;
+  margin: auto;
+  border-width: 0 100px 100px 100px;
+  border-color: transparent transparent blue transparent;
+}
+.big-tris .left {
+  left: 0;
+  bottom: 0;
+  border-width: 100px 100px 0 0;
+  border-color: red transparent transparent transparent;
+}
+.big-tris .right {
+  right: 0;
+  bottom: 0;
+  border-width: 100px 0 0 100px;
+  border-color: green transparent transparent transparent;
+}
+
+.big-down {
+  width: 0;
+  height: 0;
+  border-style: solid;
+  border-width: 0 100px 100px 100px;
+  border-color: transparent transparent blue transparent;
+  margin: auto;
+}
+
+.circle {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background: #3aaa35;
+  margin: auto;
+}
+
+.circle-cut {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  background: #3aaa35;
+  margin: auto;
+  position: relative;
+  overflow: hidden;
+}
+.circle-cut::before {
+  content: "";
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 75px;
+  height: 100%;
+  background: white;
+}
+
+.semi-bottom {
+  width: 150px;
+  height: 75px;
+  background: #3aaa35;
+  border-radius: 0 0 75px 75px;
+  margin: auto;
+}

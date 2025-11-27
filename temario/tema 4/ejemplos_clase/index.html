@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Víctor Romero Martinez">
+    <title>Index Tema 4</title>
+</head>
+
+<body>
+    <style>
+        /* Variables de color basadas en la identidad visual de MEDAC */
+        :root {
+            --medac-blue: #002855;
+            /* Azul Oscuro Institucional */
+            --medac-white: #ffffff;
+            /* Blanco */
+            --medac-gold: #cfaa56;
+            /* Tono amarillento/dorado del escudo */
+            --medac-bg: #f4f4f4;
+            /* Gris muy claro para fondo general */
+        }
+
+        /* Reset básico */
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--medac-bg);
+            color: #333;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        /* Cabecera estilo Hero */
+        header {
+            background-color: var(--medac-blue);
+            color: var(--medac-white);
+            width: 100%;
+            padding: 2rem 1rem;
+            text-align: center;
+            border-bottom: 5px solid var(--medac-gold);
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 0.5rem;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+        }
+
+        header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        /* Contenedor principal */
+        main {
+            width: 100%;
+            max-width: 800px;
+            padding: 2rem;
+        }
+
+        /* Estilo de la lista de navegación */
+        .nav-list {
+            list-style: none;
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+            gap: 1.5rem;
+        }
+
+        /* Estilo de los enlaces (Tarjetas) */
+        .nav-item a {
+            display: block;
+            background-color: var(--medac-white);
+            text-decoration: none;
+            color: var(--medac-blue);
+            padding: 1.5rem;
+            border-radius: 8px;
+            border-left: 5px solid var(--medac-blue);
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.05);
+            transition: all 0.3s ease;
+            font-weight: bold;
+            position: relative;
+        }
+
+        
+        .nav-item a:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+            border-left-color: var(--medac-gold);
+            /* Cambia a dorado al pasar el ratón */
+            background-color: #fffdf5;
+            /* Fondo ligeramente cálido */
+        }
+
+        .nav-item a::after {
+            
+            position: absolute;
+            right: 1.5rem;
+            color: var(--medac-gold);
+            font-size: 1.2rem;
+        }
+
+        /* Pie de página */
+        footer {
+            margin-top: auto;
+            padding: 1rem;
+            text-align: center;
+            font-size: 0.9rem;
+            color: var(--medac-blue);
+        }
+
+        /* Estilo del botón Volver */
+    .btn-volver {
+        display: inline-block;
+        background-color: #002855; /* Azul Medac */
+        color: #ffffff;
+        padding: 12px 24px;
+        text-decoration: none;
+        border-radius: 6px;
+        border-bottom: 4px solid #cfaa56; /* Dorado Medac */
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: bold;
+        transition: all 0.3s ease;
+        margin-top: 20px; /* Separación superior */
+        box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+
+    /* Efecto al pasar el ratón */
+    .btn-volver:hover {
+        background-color: #001f40; /* Un azul un poco más oscuro */
+        transform: translateY(-3px); /* Se eleva un poco */
+        box-shadow: 0 5px 15px rgba(0,0,0,0.2);
+    }
+    </style>
+    </head>
+
+    <body>
+
+        <header>
+            <h1>Ejercicios HTML</h1>
+            <p>Recopilación de prácticas - Tema 4</p>
+        </header>
+
+        <main>
+            <ul class="nav-list">
+                <li class="nav-item">
+                    <a href="ejemplo_etiquetas_de_texto.html">Etiquetas de Texto (Fútbol)</a>
+                </li>
+                <li class="nav-item">
+                    <a href="ejemplo_link.html">Ejemplo de Link</a>
+                </li>
+                <li class="nav-item">
+                    <a href="archivo_destino.html">Archivo Destino (Fórmulas)</a>
+                </li>
+                <li class="nav-item">
+                    <a href="ejemplo_lista_descriptiva.html">Lista Descriptiva (Bebidas)</a>
+                </li>
+                <li class="nav-item">
+                    <a href="ejemplo_lista_numerada.html">Lista Numerada (La Liga)</a>
+                </li>
+                <li class="nav-item">
+                    <a href="ejemplo_lista_no_numerada.html">Lista No Numerada (Ingredientes)</a>
+                </li>
+                <li class="nav-item">
+                    <a href="ejemplo_img.html">Ejemplo de Imagen</a>
+                </li>
+                <li class="nav-item">
+                    <a href="ejemplo_iframe.html">Ejemplo de Iframe</a>
+                </li>
+            </ul>
+        </main>
+        <a href="../../../index.html" class="btn-volver"> Volver al Inicio</a>
+
+        <footer>
+            &copy; 2025 - Víctor Romero Martínez | MEDAC
+        </footer>
+
+
+    </body>
+
+</html>

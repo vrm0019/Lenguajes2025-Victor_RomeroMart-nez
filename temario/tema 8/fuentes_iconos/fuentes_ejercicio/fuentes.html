@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Víctor Romero Martinez">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Pinyon+Script&display=swap"
+        rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Pinyon+Script&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap"
+        rel="stylesheet">
+
+    <title>Fuentes con CSS</title>
+    <style>
+        #contenedor {
+            padding-left: 2%;
+            background-color: white;
+            width: 1100px;
+            margin: 0 auto;
+            border: 2px solid rgb(0, 0, 0);
+            border-radius: 15px;
+        }
+
+        @font-face {
+            font-family: Fuente;
+            src: url(Oswald-VariableFont_wght.ttf);
+        }
+
+        body {
+            background-color: rgb(212, 231, 248);
+        }
+
+        header {
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: rgb(6, 77, 121);
+            text-align: center;
+        }
+
+        div h3 {
+            font-family: Fuente;
+        }
+
+        div h4 {
+            font-family: Fuente;
+        }
+
+        h5 {
+            font-family: 'Oswald';
+        }
+
+        h6 {
+            font-family: 'Oswald';
+        }
+
+        p {
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        footer {
+            text-align: center;
+            font-size: 13px;
+        }
+
+        footer p {
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+        }
+        .boton-volver {
+            display: block;
+            width: 100%;
+            text-align: center;
+            margin-top: 30px;
+            padding: 15px;
+            background-color: #002855;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        .boton-volver:hover {
+            background-color: #001f40;
+        }
+        
+    </style>
+</head>
+
+<body>
+    <header><br>
+        <h1>Fuentes con CSS</h1><br>
+    </header>
+    <br>
+
+    <div id="contenedor">
+        <p>1. Fuente segura del sistema</p>
+        <p>Este texto utiliza una fuente segura instalada en la mayoría de los dispositivos (Arial en este caso), lo que
+            garantiza su disponibilidad sin necesidad de descargarse.</p>
+
+        <div>
+            <h3>2. Fuente descargada mediante @font-face</h3>
+            <h4>Este parrafo utiliza una fuente almacenada localmente en el proyecto e incorporada con la regla
+                @font-face.</h4>
+        </div>
+
+        <h5>3. Fuente enlazada desde Google Fonts</h5>
+        <h6>Este texto emplea la fuente "Oswald" cargada desde Google Fonts a traves de un enlace en la cabecera.</h6>
+
+    </div>
+    <br>
+    <footer>
+        <p>&copy; 2025-Víctor Romero Martínez|MEDAC</p>
+        <p><a href="../../index.html" class="boton-volver">Volver al Tema</a></p>
+    </footer>
+
+</body>
+
+</html>

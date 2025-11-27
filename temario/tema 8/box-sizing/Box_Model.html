@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Víctor Romero Martínez">
+    <title>Box Model</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0 auto;
+            background-color: #f5f5f5;
+        }
+
+        p {
+            text-align: center;
+        }
+
+        h1 {
+            font-size: 50px;
+            color: #333;
+            text-align: center;
+        }
+
+        .caja {
+            /* Ancho fijo de la caja*/
+            width: 150px;
+            /* Alto fijo*/
+            height: 150px;
+            /* Color de fondo de la caja*/
+            background-color: #cfe8ff;
+            /* Relleno interior*/
+            padding: 20px;
+            /* Borde sólido para visualizar la diferencia con el padding */
+            border: 4px solid #1e88e5;
+            /* Para centrar las cajas en la página */
+            margin: 0 auto;
+            /* Para centrar el texto dentro de la caja */
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            font-size: 14px;
+        }
+
+        .caja-padding {
+            
+            padding: 0;
+        }
+
+        .caja-margen {
+            
+            margin-left: 1000px;
+        }
+
+        .caja-borde {
+            
+            border: 30px solid #333;
+        }
+        .icono{
+            width: 200px;
+            height: 200px;
+            margin-left: 750px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Modelo de caja (Box Model)</h1>
+    <hr>
+    <p class="explicacion">
+        En CSS, cada elemento se representa como una <strong>caja</strong>. El modelo de caja está formado por:
+        <strong>contenido</strong>, <strong>padding</strong> (relleno), <strong>border</strong> (borde) y
+        <strong>margin</strong> (margen). El padding y el borde se suman al tamaño total de la caja, mientras que el
+        margin es el espacio exterior que separa la caja de otros elementos. <strong>Ejemplo de Caja base con magin,
+        border y padding.</strong>
+    </p>
+
+    <!-- Caja base con margin, border y padding -->
+    <div class="caja">
+        <p>Caja base</p>
+    </div>
+    <hr>
+    <p class="explicacion">En el siguiente ejemplo se puede ver el resultado de quitarle a la caja anterior el Padding.
+    </p>
+    <div class="caja caja-padding">
+        Sin padding<br />
+    </div>
+    <hr>
+    <p>En este ejemplo se puede ver cómo afecta al elemento (caja) el otorgarle un valor alto al margin.</p>
+    <div class="caja caja-margen">
+        Mucho margin (left)<br />
+    </div>
+    <hr>
+    <p>En este ejemplo se puede ver cómo afecta al elemento (caja) el otorgarle un valor alto al borde.</p>
+    <div class="caja caja-borde">
+        Mucho border<br />
+    </div>
+    
+</body>
+
+</html>

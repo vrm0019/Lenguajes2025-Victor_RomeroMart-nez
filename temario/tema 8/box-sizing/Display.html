@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Víctor Romero Martínez">
+    <title>Display</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f5f5f5;
+        }
+
+        h1 {
+            font-size: 28px;
+            color: #333;
+        }
+
+        .seccion {
+            margin-bottom: 20px;
+        }
+
+        .titulo-seccion {
+            font-weight: bold;
+            margin-bottom: 8px;
+        }
+
+        /* display: block */
+        .bloque-ejemplo {
+            /* Elemento mostrado como bloque (ocupa todo el ancho disponible) */
+            display: block;
+            background-color: #cfe8ff;
+            /* Margen vertical para separar bloques */
+            margin: 5px 0;
+            /* Relleno interno para que el texto no pegue al borde */
+            padding: 5px;
+            border: 1px solid #1e88e5;
+        }
+
+        /* display: inline */
+        .inline-ejemplo {
+            /* Elemento en línea: se coloca en la misma línea que el texto */
+            display: inline;
+            background-color: #ffe0b2;
+            /* El padding y el border afectan, pero no fuerzan el salto de linea */
+            padding: 2px 4px;
+            border: 1px solid #fb8c00;
+            /* Margen vertical no se aprecia tanto en elementos inline */
+            margin: 0 2px;
+        }
+
+        /* display: inline-block */
+        .inline-block-ejemplo {
+            /* Combina características de inline y block: se comporta como un elemento en línea pero permite ancho/alto */
+            display: inline-block;
+            background-color: #c8e6c9;
+            border: 1px solid #43a047;
+            margin: 4px;
+            padding: 10px;
+
+            width: 120px;
+            text-align: center;
+        }
+
+        /* display: none */
+        .none-ejemplo {
+            /* El elemento NO se muestra y no ocupa espacio en el flujo del documento */
+            display: none;
+        }
+
+        .nota-para-el-none {
+            font-size: 13px;
+            color: #555;
+        }
+
+        .contenedor-flex {
+            /* Ejemplo extra: uso de display: flex para que se vean varias cajas alineadas */
+            display: flex;
+            gap: 10px;
+            flex-wrap: wrap;
+            margin-top: 10px;
+        }
+
+        .flex-caja {
+            /* Cada caja dentro del flex container */
+            background-color: #e1bee7;
+            border: 1px solid #8e24aa;
+            padding: 10px;
+            flex: 1 1 100px;
+            text-align: center;
+        }
+        .icono{
+            width: 200px;
+            height: 200px;
+            margin-left: 750px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Propiedad display</h1>
+
+    <p>
+        La propiedad display define cómo se muestra un elemento en la página y cómo participa en el flujo del documento.
+        Algunos valores comunes son block, inline, inline-block, none y flex.
+    </p>
+
+    <!-- Ejemplo display: block -->
+    <div class="seccion">
+        <div class="titulo-seccion">display: block</div>
+        <p>
+            Los elementos de tipo <strong>block</strong> ocupan todo el ancho disponible y generan un salto de línea
+            antes y después.
+        </p>
+        <div class="bloque-ejemplo">Bloque 1</div>
+        <div class="bloque-ejemplo">Bloque 2</div>
+        <div class="bloque-ejemplo">Bloque 3</div>
+    </div>
+
+    <!-- Ejemplo display: inline -->
+    <div class="seccion">
+        <div class="titulo-seccion">display: inline</div>
+        <p>
+            Los elementos de tipo <strong>inline</strong> se colocan dentro de una línea de texto
+            y solo ocupan el espacio necesario para su contenido.
+        </p>
+        <p>
+            Texto normal
+            <span class="inline-ejemplo">inline 1</span>
+            más texto
+            <span class="inline-ejemplo">inline 2</span>
+            y algo más de texto.
+        </p>
+    </div>
+
+    <!-- Ejemplo display: inline-block -->
+    <div class="seccion">
+        <div class="titulo-seccion">display: inline-block</div>
+        <p>
+            Un elemento <strong>inline-block</strong> se comporta como un inline (puede estar en la misma línea que
+            otros),
+            pero permite definir ancho y alto como un bloque.
+        </p>
+        <div class="inline-block-ejemplo">Caja A</div>
+        <div class="inline-block-ejemplo">Caja B</div>
+        <div class="inline-block-ejemplo">Caja C</div>
+    </div>
+
+    <!-- Ejemplo display: none -->
+    <div class="seccion">
+        <div class="titulo-seccion">display: none</div>
+        <p>
+            El siguiente elemento tiene display: none, por lo que no se ve ni ocupa espacio:
+            <span class="none-ejemplo">Este texto debería estar oculto.</span>
+        </p>
+        <p class="nota-para-el-none">
+            (He escrito "Este texto debería estar oculto." no lo verás en la página, pero puedes comprobarlo en el
+            código.)
+        </p>
+    </div>
+
+    <!-- Ejemplo extra: display: flex -->
+    <div class="seccion">
+        <div class="titulo-seccion">display: flex (extra)</div>
+        <p>
+            Con <strong>display: flex</strong>, el contenedor organiza a sus elementos hijos en un eje principal y
+            facilita la alineación.
+        </p>
+        <div class="contenedor-flex">
+            <div class="flex-caja">Caja 1</div>
+            <div class="flex-caja">Caja 2</div>
+            <div class="flex-caja">Caja 3</div>
+        </div>
+    </div>
+</body>
+
+</html>

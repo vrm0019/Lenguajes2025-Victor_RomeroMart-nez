@@ -1,0 +1,123 @@
+table{
+    border-collapse: collapse;
+}
+td{
+    border: 1px solid black;
+    padding: 0;
+}
+body{
+    font-family: Arial;
+}
+h1{
+    text-align: center;
+}
+p{
+    text-align: center;
+}
+.caja{
+    width: 300px;
+    height: 250px;
+    margin: auto;
+    box-sizing: border-box;
+    color: darkblue;
+    
+}
+.caja1{
+    background-color: antiquewhite;
+    border-color: black;
+    border-style: dotted;
+    border-width: 5px;
+
+    padding: 10%;
+}
+.caja2{
+    background-color: yellow;
+    width: 300px;
+    height: 250px;
+    margin: auto;
+    box-sizing: border-box;
+    border-top-right-radius: 40px;
+    border-bottom-right-radius: 40px;
+    border-left: 50px solid black;
+    border-top: 3px solid black;
+    border-right: 3px solid black;
+    border-bottom: 3px solid black;
+    
+
+}
+.caja3{
+    background-color: pink;
+    
+    border-style: solid;
+    border-width: 7px;
+    border-radius: 10px;
+    padding: 15px;
+    border:15px groove darksalmon;
+}
+.caja4{
+    width: 300px;
+    height: 250px;
+    margin: auto;
+    box-sizing: border-box;
+    border-style: inset;
+    background-color: darkseagreen;
+    border-top-right-radius: 60px;
+    border-bottom-left-radius: 60px;
+    background-color: aquamarine;
+    border-top:20px solid black;
+    border-left:20px solid black;
+    border-right:20px solid darkgreen;
+    border-bottom:20px solid darkgreen ;
+}
+.caja5{
+    width: 250px;
+    height: 250px;
+    box-sizing: border-box;
+    background-color: peachpuff;
+    border-radius: 100%;
+    border:3px dotted orange;
+    text-align: center;
+    font-size: 50px;
+    padding-top: 30%;
+    
+    
+}
+.caja6{
+    background-color: aliceblue;
+    border-top:20px solid blue;
+    border-left:20px solid blue;
+    border-right:20px solid darkblue;
+    border-bottom:20px solid  darkblue;
+    text-align: center;
+    padding: 20%;
+    
+}
+.caja7{
+    width: 300px;
+    height: 250px;
+    margin: auto;
+    box-sizing: border-box;
+    background:linear-gradient(to bottom, red, orange, yellow);
+    border-left: 3px solid red;
+    border-top: 3px solid red;
+    border-right: 3px solid red;
+    border-bottom: 15px solid red;
+    text-align: center;
+    padding-top: 20%;
+}
+.caja8{
+    background-color: aliceblue;
+    border-top:20px solid yellow;
+    border-left:20px solid blue;
+    border-right:20px solid green;
+    border-bottom:20px solid  red;
+}
+.caja9{
+    
+    background-color: white;
+    border-radius: 50px;
+    border:25px double purple;
+    text-align: center;
+    padding: 10%;
+    
+}

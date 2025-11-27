@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Plantas de Interior</title>
+  <style>
+    :root {
+      --verde-oscuro: #2e4a3f;
+      --beige: #f3e9d2;
+      --beige-oscuro: #e4d6b8;
+    }
+    body {
+      margin:0;
+      font-family: Arial, sans-serif;
+      background: var(--beige);
+      color: var(--verde-oscuro);
+      line-height: 1.6;
+    }
+    #contenedor{
+      width: 1100px;
+      margin: 0 auto;
+    }
+    #cabecera{
+      background: var(--verde-oscuro);
+      color: white;
+      text-align: center;
+      padding: 20px;
+      
+    }
+    h2 {
+      color: var(--beige);
+      background-color: var(--verde-oscuro);
+      border-radius: 10px;
+      text-align: center;
+    }
+    h3{
+      font-style: italic; /* Cursiva*/
+    }
+    nav ul{
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      background: var(--beige-oscuro);
+      text-align: center;
+    }
+    nav ul li{
+      display: inline-block;
+      margin: 5px;
+    }
+    nav ul li a {
+      display: inline-block;
+      padding: 10px 20px;
+      background: var(--verde-oscuro);
+      color: white;
+      text-decoration: none; /*elimina la estética de un vínculo*/
+      border-radius: 5px;
+    }
+    nav ul a:hover{
+      background: var(--beige);
+      color: var(--verde-oscuro);
+    }
+    div[id]{
+      padding: 20px;
+      margin: 20px;
+      background: var(--beige-oscuro);
+      border-radius: 8px;
+    }
+    .planta-contenido{
+      width: 100%;
+    }
+    .planta-contenido img{
+      display: inline-block;
+      width: 500px;
+      height: auto;
+      border-radius: 8px;
+      margin: 10px;
+    }
+    .planta-contenido p{
+      display: inline-block;
+      vertical-align: top;
+      width: 480px;
+    }
+    #potos,
+    #dracena,
+    #costilla,
+    #espatifilo {
+      border: 2px dotted var(--verde-oscuro);
+    }
+    #inicio,
+    #cuidados{
+      border: 2px solid var(--verde-oscuro);
+      border-radius: 12px;
+    }
+    footer{
+      text-align: center;
+      padding: 80px;
+      background: var(--verde-oscuro);
+      color: white;
+    }
+    body{
+      background-image: url(./imagenes/fondo_plantas.webp);
+    }
+    footer{
+     color: black;
+     font-size: 900;
+     font-weight: 900;
+     margin: 18px;
+     border-radius: 10px;
+     background-image: url("imagenes/fondo_pie.png");
+     background-repeat: no-repeat;
+     background-size: cover;
+     background-position: center center;
+    }
+
+
+
+  </style>
+  
+</head>
+
+<body>
+  <div id="contenedor">
+
+    <div id="cabecera">
+      <h1>Plantas de Interior</h1>
+    </div>
+
+    <nav>
+      <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#potos">Potos</a></li>
+        <li><a href="#dracena">Dracena</a></li>
+        <li><a href="#costilla">Costilla de Adán</a></li>
+        <li><a href="#espatifilo">Espatifilo</a></li>
+        <li><a href="#cuidados">Cuidados</a></li>
+      </ul>
+    </nav>
+
+    <div id="inicio">
+      <h2>Bienvenido al mundo de las plantas de interior</h2>
+      <p>Las plantas de interior han acompañado al ser humano desde hace siglos, aportando frescura, color y vida a
+        nuestros hogares. Estas plantas no solo mejoran el aspecto estético de cualquier espacio, sino que también
+        contribuyen al bienestar general al purificar el aire y generar una sensación de calma.</p>
+      <p>Existen muchos tipos de plantas adecuadas para interiores, desde las más resistentes hasta las que requieren
+        cuidados más detallados. Dependiendo de las condiciones de tu hogar, puedes elegir entre una gran variedad para
+        decorar y mejorar tus ambientes.</p>
+      <p>A medida que descubras más sobre ellas, aprenderás cómo cada especie tiene características únicas que pueden
+        adaptarse mejor a ciertos rincones, niveles de luz y estilos decorativos.</p>
+    </div>
+
+    <div id="potos">
+      <h2>Potos</h2>
+      <h3>Epipremnum aureum</h3>
+      <div class="planta-contenido">
+        <img src="./imagenes/potos.png" alt="Poto" />
+        <p>El potos, cuyo nombre científico es <strong>Epipremnum aureum</strong>, es una de las plantas de interior más
+          populares del mundo. Su facilidad de cultivo y su capacidad para adaptarse a diferentes niveles de luz la
+          convierten en una opción ideal para principiantes. Además, es conocida por su rápido crecimiento y su
+          habilidad para purificar el aire.</p>
+      </div>
+    </div>
+
+    <div id="dracena">
+      <h2>Dracena</h2>
+      <h3>Dracaena fragrans</h3>
+      <div class="planta-contenido">
+        <img src="./imagenes/dracena.png" alt="Dracena" />
+        <p>La dracena, llamada científicamente <strong>Dracaena fragrans</strong>, es una planta elegante que aporta un
+          toque tropical a cualquier habitación. Sus hojas alargadas y su porte erguido la hacen perfecta para decorar
+          rincones o pasillos. Es resistente y tolera bien ambientes con poca luz.</p>
+        
+
+      </div>
+    </div>
+
+    <div id="costilla">
+      <h2>Costilla de Adán</h2>
+      <h3>Monstera deliciosa</h3>
+      <div class="planta-contenido">
+        <img src="./imagenes/montsera.png" alt="Costilla de Adán" />
+        <p>La costilla de Adán, conocida por su nombre científico <strong>Monstera deliciosa</strong>, es famosa por sus
+          hojas grandes y perforadas. Ha ganado gran popularidad en la decoración moderna gracias a su aspecto exótico y
+          su crecimiento vigoroso. Requiere luz abundante pero indirecta.</p>
+      </div>
+    </div>
+
+    <div id="espatifilo">
+      <h2>Cuna de Moisés</h2>
+      <h3>Spathiphyllum</h3>
+      <div class="planta-contenido">
+        <img src="./imagenes/espatifilo.png" alt="Cuna de Moisés" />
+        <p>La Cuna de Moisés, cuyo nombre científico es <strong>Spathiphyllum</strong>, es una planta muy apreciada por
+          su elegancia y su capacidad para florecer incluso en interiores. Destaca por sus brácteas blancas que parecen
+          una "cuna" y por su capacidad para purificar el aire. Requiere buena humedad ambiental y luz indirecta para
+          florecer adecuadamente.</p>
+      </div>
+    </div>
+
+    <div id="cuidados">
+      <h2>Cuidados generales de las plantas de interior</h2>
+      <p>El cuidado de las plantas de interior depende de varios factores, como la luz, el riego, la temperatura y la
+        humedad. En general, la mayoría de especies prefiere luz indirecta, ya que la luz directa puede quemar sus
+        hojas. Es importante observar cómo reacciona cada planta y ajustar su ubicación en consecuencia.</p>
+      <p>En cuanto al riego, es fundamental evitar el exceso de agua. Muchas plantas sufren más por un riego excesivo
+        que por la falta de él. Siempre es recomendable comprobar la humedad del sustrato antes de volver a regar.
+        Además, usar macetas con buen drenaje ayuda a prevenir problemas de pudrición.</p>
+      <p>La temperatura ideal para la mayoría de las plantas de interior se sitúa entre los 18 y 24 grados. También
+        agradecen ambientes con cierta humedad, aunque muchas pueden adaptarse sin problemas a los hogares más secos.
+      </p>
+      <p>Finalmente, no olvides limpiar sus hojas de vez en cuando, fertilizar durante la temporada de crecimiento y
+        trasplantarlas cuando sea necesario para permitir un mejor desarrollo.</p>
+    </div>
+
+    <footer>
+      <p>&copy; 2025 Plantas de Interior</p>
+    </footer>
+  </div>
+</body>
+
+</html>

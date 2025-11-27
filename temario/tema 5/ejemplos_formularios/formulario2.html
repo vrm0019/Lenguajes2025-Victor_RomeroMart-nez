@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Ferran Cutillas Castillo">
+    <title>Formulario2</title>
+</head>
+<body style="width:1000px ; margin: auto">
+    <h1>Formulario de Contacto</h1>
+    <form name="formulario" action="proceso.php" method="post">
+        
+        <label for="nombre">Nombre completo: (requerido) </label><br>
+        <input type="text" name="nombre" id="nombre" ><br><br>
+
+        <label for="email">Correo electrónico: (requerido)</label><br>
+        <input type="email" name="email" id="email"><br><br>
+        
+        <label for="edad">Edad: </label><br>
+        <input type="number" name="edad" id="edad"><br><br>
+
+        <label for="curso">Curso de intrés:</label><br>
+        <select name="curso" id="curso">
+            <option value="Informática básica">Informática básica</option>
+            <option value="Informática avanzada">Informática avanzada</option>
+        </select><br><br>
+
+        <label for="turno"> Turno preferido: </label><br>
+        <input type="radio" id="turno1" name="turno" value="opcion1"> Mañana <br>
+        <input type="radio" id="turno2" name="turno" value="opcion2"> Tarde <br><br>
+
+        <input type="checkbox" name="condiciones" id="condiciones">
+        <label for="condiciones"> Acepto las condiciones de uso</label><br><br>
+
+        <label for="comentarios">Comentarios adicionales: </label><br>
+        <textarea name="comentarios" id="comentarios" placeholder="Escriba aquí tus dudas o preferencias... "></textarea><br><br>
+
+        <input type="submit"  value="Enviar regiestro"> 
+
+    </form>
+ </body>
+</html>

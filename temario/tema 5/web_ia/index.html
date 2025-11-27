@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Víctor Romero Martínez">
+    
+    <title>Web hecha con IA</title>
+</head>
+<body>
+    <style>
+    /* Sólo centrar la página y establecer ancho máximo (permitido por la consigna) */
+    #container {
+      margin-left: auto;
+      margin-right: auto;
+      max-width: 900px;
+    }
+  </style>
+
+</head>
+<body>
+  <!-- Prompt usado para generar esta página (se pide incluirlo en la entrega) -->
+  <!--
+  PROMPT (usado para generar el contenido de esta página):
+  "Genera el HTML de una única página (temática: Córdoba CF) en español.
+   Debe ser contenido original, coherente y relevante para el club (historia general, estadio,
+   colores, afición, rivalidades suaves, entradas útiles). Incluye y utiliza las etiquetas vistas
+   en las presentaciones de los temas 1-5: link, style, script, h1-h6, p, div, hr, br, b, strong,
+   i, em, mark, small, del, ins, sub, sup, a, img, ul, ol, dl, dt, dd, iframe, table, tr, th, td,
+   caption. No uses CSS fuera de lo permitido (centrar y ancho). Añade el prompt en un comentario.
+  -->
+
+  <div id="container">
+    <h1>Córdoba CF: Pasión blanquiverde</h1>
+    <hr>
+
+    <div>
+      <h2>Resumen del club</h2>
+      <p>
+        El <strong>Córdoba Club de Fútbol</strong> es un equipo representativo de la ciudad de Córdoba.
+        Su indumentaria característica combina el <mark>blanco</mark> y el <b>verde</b>, colores que
+        identifican a la afición. El club juega en su estadio principal, el <em>Estadio Nuevo Arcángel</em>.
+      </p>
+
+      <h3>Datos rápidos</h3>
+      <dl>
+        <dt>Nombre</dt>
+        <dd><strong>Córdoba CF</strong></dd>
+
+        <dt>Estadio</dt>
+        <dd>Estadio Nuevo Arcángel — <small>capacidad aproximada (según temporada)</small></dd>
+
+        <dt>Colores</dt>
+        <dd>Blanco y verde</dd>
+
+        <dt>Contacto</dt>
+        <dd>
+          <a href="mailto:info@cordobacf.example" title="Enviar correo al club">info@cordobacf.example</a>
+        </dd>
+      </dl>
+    </div>
+
+    <div>
+      <h2>Historia y momentos</h2>
+      <p>
+        A lo largo de su trayectoria, el club ha vivido ascensos y descensos, y su afición ha mostrado
+        siempre un apoyo <em>firme</em>. Aquí mostramos algunos hitos recordados por la afición:
+      </p>
+
+      <ol>
+        <li>Campañas de ascenso memorables.</li>
+        <li>Partidos históricos en el Nuevo Arcángel.</li>
+        <li>Iniciativas de cantera y vinculación con barrios de la ciudad.</li>
+      </ol>
+
+      <h4>Momentos destacados</h4>
+      <ul>
+        <li>Partidos con gran afluencia de público.</li>
+        <li>Iniciativas sociales del club.</li>
+        <li>Desarrollo de jóvenes promesas.</li>
+      </ul>
+    </div>
+
+    <div>
+      <h2>Plantilla (ejemplo resumido)</h2>
+      <p>Tabla con una vista reducida de posiciones y algunos jugadores representativos.</p>
+
+      <table border="1">
+        <caption>Plantilla (resumen)</caption>
+        <tr>
+          <th>Posición</th>
+          <th>Jugador</th>
+          <th>Observación</th>
+        </tr>
+        <tr>
+          <td rowspan="2">Portería</td>
+          <td>Carlos Marín</td>
+          <td>Titular</td>
+        </tr>
+        <tr>
+          <td>Iker Álvarez</td>
+          <td>Recambio</td>
+        </tr>
+        <tr>
+          <td colspan="1">Carracedo</td>
+          <td>Extremo</td>
+          <td>Capitán</td>
+        </tr>
+      </table>
+    </div>
+
+    <div>
+      <h2>La afición y el estadio</h2>
+      <p>
+        El ambiente en el estadio distingue al club: cánticos, banderas y encuentros antes del partido.
+        El apoyo local es parte esencial de la identidad <em>blanquiverde</em>.
+      </p>
+
+      <p>
+        Para llegar al estadio y organizar tu visita puedes consultar fuentes oficiales: 
+        <a href="https://es.wikipedia.org/wiki/Córdoba_Club_de_Fútbol" target="_blank" title="Wikipedia Córdoba CF">Página informativa</a>.
+      </p>
+
+      <hr>
+
+      <h3>Multimedia</h3>
+      <p>Logo oficial (imagen de ejemplo):</p>
+      <p>
+        <img src="Córdoba.png" alt="Escudo Córdoba CF" title="Escudo Córdoba CF" width="150" height="150">
+      </p>
+
+      <p>Más recursos (página oficial o reseñas):</p>
+      <ul>
+        <li><a href="https://www.cordobacf.com" target="_blank" title="Web oficial (ejemplo)">Web oficial (ejemplo)</a></li>
+        <li><a href="https://es.wikipedia.org/wiki/Córdoba_Club_de_Fútbol" target="_blank" title="Wikipedia">Ficha en Wikipedia</a></li>
+      </ul>
+
+      <br>
+
+      <h4>Vídeo/Presentación (embebido)</h4>
+      <!-- iframe incluido como etiqueta vista en presentaciones -->
+      <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" width="560" height="315" title="Vídeo ejemplo"></iframe>
+
+      <hr>
+    </div>
+
+    <div>
+      
+      <h5>Noticias breves</h5>
+      <p>
+        <small>Últimas noticias: consulta siempre fuentes oficiales para confirmar datos y fechas.</small>
+      </p>
+
+      <h6>Notas al pie (ejemplo de subíndice y superíndice)</h6>
+      <p>
+        Números de merch: modelo<sub>2025</sub><sup>v1</sup>.
+        <del>Entrada antigua</del> <ins>Entrada actualizada</ins>
+      </p>
+
+      <p>
+        Texto con <b>negrita</b>, <strong>importancia</strong>, <i>cursiva</i> y <em>énfasis</em> para mostrar
+        las etiquetas de formato.
+      </p>
+    </div>
+
+    <hr>
+
+    <div>
+      <h2>Enlaces útiles</h2>
+      <p>
+        <a href="https://www.google.com/search?q=Córdoba+CF" target="_blank" title="Buscar en Google">Buscar sobre Córdoba CF</a>
+        <br>
+        <a href="mailto:aficion@cordobacf.example" title="Correo de ejemplo">Contactar a la afición (ejemplo)</a>
+      </p>
+    </div>
+
+    <script>
+      // Script vacío incluido porque la etiqueta <script> está permitida en la lista de temas.
+      // No se ejecutan acciones para mantener la entrega sencilla y centrada en HTML.
+    </script>
+
+  </div>
+</body>
+</html>

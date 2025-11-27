@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Víctor Romero Martínez">
+    <title>Document</title>
+    <style>
+        body{
+            font-family: Arial;
+            background-color: #e0e0e0;
+            padding: 10px;
+        }
+        .box{
+            border: 2px solid #666;
+            margin: 10px auto;
+        }
+        header,main,section,article,figure,footer,nav,aside{
+            display: block;
+            margin: 5px 0;
+            border: 1px solid black;
+            border-radius: 6px;
+            padding: 10px;
+        }
+        header{
+            background-color:bisque;
+        }
+        main{
+            background-color: #BBDEFB;
+        }
+        section{
+            background-color: #FFF9C4;
+        }
+        article{
+            background-color: #FFE0B2;
+        }
+        figure{
+            background-color: #E1BEE7;
+        }
+        footer{
+            background-color: #D7CCC8 ;
+        }
+        nav{
+            background-color: #BBDEFB;
+        }
+        aside{
+            background-color:#CFD8DC ;
+        }
+        .inline{
+            display: inline-block;
+            vertical-align: top;
+        }
+        .center{
+            text-align: center;
+        }
+        .w100{
+            width: 100%;
+        }
+        .w90{
+            width: 90%;
+        }
+        .w80{
+            width: 80%;
+        }
+        .w70{
+            width: 70%;
+        }
+        .w60{
+            width: 60%;
+        }
+        .w50{
+            width: 50%;
+        }
+        .w40{
+            width: 40%;
+        }
+        .w30{
+            width: 30%;
+        }
+        .w20{
+            width: 20%;
+        }
+
+
+    </style>
+</head>
+<body>
+    <header class="box center w80" > <p>&lt; Header &gt;</p><figure class="inline w20">Figura <img src="https://placehold.co/100x100" alt="logo"></figure> <h1 class="inline w50">Web Semantica</h1> <aside class="inline w20">Elementos</aside> </header>
+
+    <nav class="box w80 center"> <a href="#">Enlace 1</a><a href="#">Enlace 2</a><a href="#">Enlace 3</a></nav>
+    <main class="box w80 center">
+        <section>
+            <p>&lt; section &gt;</p>
+            <section class="inline w70">
+                <p>&lt; section &gt;</p>
+                <header>&lt; header &gt;</header>
+                <article>&lt; article &gt;</article>
+                <figure class="w40">&lt; figure &gt;</figure>
+                <footer>&lt; footer &gt;</footer>
+            </section>
+            <section class="inline w20">
+                <article>&lt; article &gt;</article>
+                <article>&lt; article &gt;</article>
+                <article>&lt; article &gt;</article>
+            </section>
+        </section>
+        <section>
+            <p>&lt; section &gt;</p>
+            <section class="inline w70">
+                <p>&lt; section &gt;</p>
+                <header>&lt; header &gt;</header>
+                <article>&lt; article &gt;</article>
+                <figure class="w40">&lt; firgure &gt;</figure>
+                <footer>&lt; footer &gt;</footer>
+            </section>
+            <section class="inline w20">
+                <p>&lt; section &gt;</p>
+                <aside>&lt; aside &gt;</aside>
+                <footer>&lt; footer &gt;</footer>
+            </section>
+        </section>
+        <section class="center">
+            <p>&lt; section &gt;</p>
+            <aside class="inline w80">&lt; aside &gt;</aside>
+        </section>
+
+    </main>
+    <footer class="box w80">&lt; footer &gt;</footer>
+</body>
+</html>

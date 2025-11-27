@@ -1,0 +1,73 @@
+<html>
+<head>
+    <title>Ejemplo de Formulario HTML5</title>
+</head>
+<body>
+    <h2>Ejemplo de Formulario HTML5</h2>
+    <form action="procesar.php" method="post">
+        <label for="button">Botón:</label>
+        <input type="button" id="button" value="Haz clic" onclick="alert('Hiciste clic en el botón.')"><br><br>
+        
+        <label for="checkbox">Casilla de verificación:</label>
+        <input type="checkbox" id="checkbox" name="checkbox" value="valor"><br><br>
+        
+        <label for="color">Selector de color:</label>
+        <input type="color" id="color" name="color" value="#ff0000"><br><br>
+        
+        <label for="date">Fecha:</label>
+        <input type="date" id="date" name="date"><br><br>
+        
+        <label for="datetime-local">Fecha y hora local:</label>
+        <input type="datetime-local" id="datetime-local" name="datetime-local"><br><br>
+        
+        <label for="email">Correo electrónico:</label>
+        <input type="email" id="email" name="email" required><br><br>
+        
+        <label for="file">Subir archivo:</label>
+        <input type="file" id="file" name="file"><br><br>
+        
+        <input type="hidden" name="hidden" value="Valor oculto">
+        
+        <label for="image">Imagen:</label>
+        <input type="image" id="image" src="imagen.png" alt="Imagen"><br><br>
+        
+        <label for="month">Mes:</label>
+        <input type="month" id="month" name="month"><br><br>
+        
+        <label for="number">Número:</label>
+        <input type="number" id="number" name="number" min="1" max="100" step="1" value="50"><br><br>
+        
+        <label for="password">Contraseña:</label>
+        <input type="password" id="password" name="password"><br><br>
+        
+        <label for="radio">Botón de radio:</label>
+        <input type="radio" id="radio1" name="radio" value="opcion1"> Opción 1
+        <input type="radio" id="radio2" name="radio" value="opcion2"> Opción 2<br><br>
+        
+        <label for="range">Control de rango:</label>
+        <input type="range" id="range" name="range" min="0" max="100" step="1" value="50"><br><br>
+        
+        <input type="reset" value="Restablecer">
+        
+        <label for="search">Campo de búsqueda:</label>
+        <input type="search" id="search" name="search"><br><br>
+        
+        <input type="submit" value="Enviar">
+        
+        <label for="tel">Teléfono:</label>
+        <input type="tel" id="tel" name="tel"><br><br>
+        
+        <label for="text">Texto:</label>
+        <input type="text" id="text" name="text"><br><br>
+        
+        <label for="time">Hora:</label>
+        <input type="time" id="time" name="time"><br><br>
+        
+        <label for="url">URL:</label>
+        <input type="url" id="url" name="url"><br><br>
+        
+        <label for="week">Semana:</label>
+        <input type="week" id="week" name="week"><br><br>
+    </form>
+</body>
+</html>

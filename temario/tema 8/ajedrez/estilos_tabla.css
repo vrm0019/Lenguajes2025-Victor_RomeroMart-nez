@@ -1,0 +1,33 @@
+table{
+    margin: 0 auto;
+    border-collapse: collapse;
+    text-align: center;
+    
+    
+}
+img{
+    width: 70%;
+    height: 70%;
+    
+}
+
+
+.caja{
+    width: 100px;
+    height: 85px;
+    padding-top: 15px;
+
+}
+.borde{
+    background-image: url(./imagenes/madera-lisa.png);
+   
+}
+.oscuro{
+    background-image: url(./imagenes/madera_oscura.png);
+}
+.claro{
+    background-image: url(./imagenes/madera_clara.png);
+}
+.darvuelta{
+    transform: rotate(180deg);
+}

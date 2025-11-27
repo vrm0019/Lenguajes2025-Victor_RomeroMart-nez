@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Víctor Romero Martinez">
+    <title>Box-sizing</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0 auto;
+        }
+
+        h1 {
+            font-size: 28px;
+            color: #333;
+        }
+
+        .grupo {
+            /* Caja contenedora para cada grupo de ejemplo */
+            width: 280px;
+            margin: 0 auto;
+        }
+
+        .titulo-caja {
+            font-weight: bold;
+            margin-bottom: 5px;
+        }
+
+        .caja {
+            width: 200px;
+            /* Padding y border para ver cómo afecta al ancho total */
+            padding: 20px;
+            border: 5px solid #000000;
+            background-color: #fff;
+            margin-bottom: 10px;
+        }
+
+        .content-box {
+            /* box-sizing: content-box es el valor por defecto.*/
+            box-sizing: content-box;
+        }
+
+        .border-box {
+            /* box-sizing: border-box hace que width incluya contenido + padding + border. */
+            box-sizing: border-box;
+        }
+
+        .marco {
+            width: 200px;
+            border: 1px dashed rgb(195, 3, 3);
+            padding: 0;
+            margin-bottom: 15px;
+            background-color: #ffecec;
+            font-size: 12px;
+        }
+
+        .marco-texto {
+            padding: 4px;
+        }
+        .icono{
+            width: 200px;
+            height: 200px;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Propiedad box-sizing</code></h1>
+
+    <p>
+        La propiedad box-sizing define cómo se calcula el ancho y el alto de una caja.
+        Con content-box, el tamaño especificado se aplica solo al contenido,
+        mientras que el padding y el border se suman.
+    </p>
+    <hr>
+    <div>
+        <!-- Ejemplo de content-box -->
+        <div class="grupo">
+            <div class="titulo-caja">box-sizing: content-box</div>
+
+            <div class="marco">
+                <div class="marco-texto">
+                    Ancho total objetivo: 200px (marco rojo).<br />
+                    La caja interior se extenderá MÁS allá de este marco.
+                </div>
+            </div>
+
+            <div class="caja content-box">
+                Esta caja tiene width: 200px y usa content-box.<br />
+                El padding y el borde se suman al ancho total, por eso la caja es más ancha que el marco rojo.
+            </div>
+        </div>
+        <hr>
+        <!-- Ejemplo de border-box -->
+        <div class="grupo">
+            <div class="titulo-caja">box-sizing: border-box</div>
+
+            <div class="marco">
+                <div class="marco-texto">
+                    Ancho total objetivo: 200px (marco rojo).<br />
+                    La caja interior encaja EXACTAMENTE dentro de este marco.
+                </div>
+            </div>
+
+            <div class="caja border-box">
+                Esta caja tiene width: 200px y usa border-box.<br />
+                El padding y el borde están incluidos en esos 200px, por eso encaja justo dentro del marco rojo.
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>

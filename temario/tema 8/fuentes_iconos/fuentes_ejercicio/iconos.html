@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Víctor Romero Martínez">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+    <title>Menú con Iconos</title>
+    <style>
+        #contenedor {
+            padding-left: 2%;
+            background-color: white;
+            width: 1100px;
+            margin: 0 auto;
+            border: 2px solid aliceblue;
+            border-radius: 15px;
+        }
+
+        body {
+            background-color: rgb(117, 189, 237);
+            text-align: center;
+        }
+
+        header {
+            font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+            background-color: rgb(82, 162, 212);
+            text-align: center;
+        }
+
+        h1 {
+            color: rgb(49, 83, 185);
+            font-family: Arial, sans-serif;
+        }
+
+        p {
+            font-family: Arial, Verdana, Georgia;
+            font-size: 15px;
+        }
+
+        footer {
+            text-align: center;
+            font-size: 13px;
+        }
+
+        footer p {
+            font-family: 'Segoe UI', sans-serif;
+        }
+
+        li {
+            font-family: Verdana;
+            font-size: 13px;
+        }
+
+        ul li {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 20px;
+            border-radius: 5px;
+            text-align: center;
+        }
+
+        ul li:hover {
+            display: inline-block;
+            padding: 10px 20px;
+            background: lightskyblue;
+            color: royalblue;
+            border-radius: 5px;
+        }
+
+        i {
+            color: blue;
+            text-align: center;
+        }
+
+        .boton-volver {
+            display: block;
+            width: 100%;
+            text-align: center;
+            margin-top: 30px;
+            padding: 15px;
+            background-color: #002855;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+
+        .boton-volver:hover {
+            background-color: #001f40;
+        }
+    </style>
+</head>
+
+<body>
+    <br>
+    <h1>Menú con Iconos</h1>
+    <p>Este menú está creado usando una lista no numerada y la librería de iconos Font Awesome. Cada elemento del menú
+        incluye un icono seguido del texto.</p>
+    <br>
+    <div id="contenedor">
+        <nav>
+            <ul>
+                <li><i class="fa-solid fa-house"></i>Inicio</li>
+                <li><i class="fa-solid fa-user"></i>Perfil</li>
+                <li><i class="fa-solid fa-gear"></i>Configuración</li>
+                <li><i class="fa-solid fa-circle-info"></i></i>Ayuda</li>
+                <li><i class="fa-solid fa-envelope"></i>Contacto</li>
+                <li><i class="fa-solid fa-arrow-right-to-bracket"></i>Login</li>
+            </ul>
+        </nav>
+    </div>
+    <br>
+    <footer>
+        <p>&copy; 2025-Víctor Romero Martínez|MEDAC</p>
+        <p><a href="../../index.html" class="boton-volver">Volver al Tema</a></p>
+    </footer>
+
+</body>
+
+</html>
